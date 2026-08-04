@@ -1,0 +1,28 @@
+[project]
+name = "la-metro-scraper"
+version = "0.1.0"
+description = "Stream LA Metro bus + rail vehicle positions over WebSocket into SQLite"
+readme = "README.md"
+authors = [
+    { name = "Alex Garcia" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.1",
+    "sqlite-tg>=0.0.1a21",
+    "websockets>=13",
+]
+
+[project.scripts]
+la-metro-scraper = "la_metro_scraper.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "solite==0.0.1a36",
+    "solite-codegen-python-sqlite3>=0.0.1a4",
+]
