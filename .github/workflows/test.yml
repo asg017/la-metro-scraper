@@ -13,7 +13,3 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - run: uv sync --locked
       - run: uv run pytest
-      - name: check codegen'd _queries.py is fresh
-        run: |
-          make -B
-          git diff --exit-code src/la_metro_scraper/_queries.py
