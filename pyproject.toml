@@ -1,6 +1,6 @@
 [project]
 name = "la-metro-scraper"
-version = "0.1.0a1"
+version = "0.1.0a2"
 description = "Stream LA Metro bus + rail vehicle positions over WebSocket into SQLite"
 readme = "README.md"
 authors = [
